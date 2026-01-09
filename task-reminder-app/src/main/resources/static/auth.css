@@ -1,0 +1,115 @@
+/* --- Modern Auth Styling --- */
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Background matches the dashboard's light gray */
+body {
+    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Form container matching the modal/card depth of the dashboard */
+.card {
+    width: 380px;
+    background: white;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    border: 1px solid #f1f5f9;
+}
+
+h2 {
+    text-align: center;
+    color: #0d47a1; /* Primary Dashboard Blue */
+    margin-bottom: 25px;
+    font-size: 1.8rem;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+input {
+    width: 100%;
+    padding: 12px 15px;
+    margin-top: 5px;
+    border: 1px solid #e2e8e0;
+    border-radius: 8px;
+    outline: none;
+    transition: 0.3s;
+    font-size: 1rem;
+}
+
+input:focus {
+    border-color: #0d47a1;
+    box-shadow: 0 0 0 3px rgba(13, 71, 161, 0.1);
+}
+
+/* Integrated OTP button that sits inside the input field */
+.otp-btn {
+    background: #ffa000; /* Dashboard Orange */
+    color: white;
+    padding: 8px 15px;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    border: none;
+    cursor: pointer;
+    float: right;
+    margin-top: -45px; /* Positions button inside the input box */
+    margin-right: 5px;
+    position: relative;
+    z-index: 10;
+    font-weight: 600;
+}
+
+.otp-btn:hover {
+    background: #ff8f00; /* Hover state from pomo button */
+}
+
+/* Primary Action Button matching .add-btn */
+button.main-btn {
+    width: 100%;
+    padding: 14px;
+    margin-top: 20px;
+    background: #0d47a1;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button.main-btn:hover {
+    background: #082d63;
+    transform: translateY(-1px);
+}
+
+.link {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.link a {
+    color: #0d47a1;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.link a:hover {
+    text-decoration: underline;
+}
+
+.hidden {
+    display: none !important;
+}

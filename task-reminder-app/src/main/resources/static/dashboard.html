@@ -27,8 +27,18 @@
         <button class="pomo-trigger-btn" onclick="openPomodoro()">
             <i class="fa-solid fa-stopwatch"></i> Pomodoro
         </button>
+
+        <button class="pomo-trigger-btn" style="background: #2e7d32;" onclick="window.open('https://docs.google.com/spreadsheets/d/1uROUAZ5lEaW2ONJ3EOsq3Ip8Qyc6DFtWvodhVuOXEtg/edit?usp=sharing', '_blank')">
+            <i class="fa-solid fa-table-list"></i> Agile Sheet
+        </button>
+
         <button class="add-btn" onclick="toggleAddTask()">+ Add Task</button>
+
+        <button class="pomo-trigger-btn logout-btn" onclick="logout()">
+            <i class="fa-solid fa-right-from-bracket"></i> Logout
+        </button>
     </div>
+
 </header>
 
 <div class="container">
@@ -167,6 +177,15 @@
         </div>
     </div>
 </div>
+<script>
+    function logout() {
+        fetch("/auth/logout", { method: "POST" })
+            .then(() => window.location.href = "/login.html");
+    }
+</script>
+<footer class="app-footer">
+    <p>© 2026 Task Reminder App · Empowering productivity through streamlined task management · An Infosys Internship Initiative</p>
+</footer>
 
 <script src="app.js"></script>
 </body>

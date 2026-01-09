@@ -100,3 +100,46 @@ td { padding: 20px 15px; border-bottom: 1px solid #f1f5f9; font-size: 1.05rem; }
 .hidden { display: none !important; }
 .fade-in { animation: fadeIn 0.5s ease; }
 @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+.logout-btn {
+    background: #ef4444;
+}
+
+.logout-btn:hover {
+    background: #dc2626;
+    transform: scale(1.05);
+}
+
+/* --- Auth Page Specifics --- */
+.auth-page {
+    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.auth-container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* --- Refined Footer Style --- */
+.app-footer {
+    background: white;
+    padding: 25px;
+    text-align: center;
+    color: #475569;
+    font-size: 0.95rem;
+    font-weight: 500;
+    box-shadow: 0 -4px 6px -1px rgba(0,0,0,0.05);
+    border-top: 1px solid #e2e8f0;
+}
+
+/* --- Mobile Responsiveness for Auth Card --- */
+@media (max-width: 600px) {
+    .modal-content {
+        width: 90%;
+        margin: 20px auto;
+    }
+}
